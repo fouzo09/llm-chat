@@ -43,7 +43,7 @@ if __name__ == "__main__":
             for chunck in ask_gpt(history):
                 response += chunck
                 print(chunck, end="", flush=True)
-            history.append({"role": "user", "content": response})
+            history.append({"role": "assistant", "content": response})
         except APIError as e:
             print(f"OpenAI error {e.message}")
             history.pop()
