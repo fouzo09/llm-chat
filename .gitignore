@@ -1,4 +1,6 @@
 .env
+.gradio
+.qodo
 .venv/
 __pycache__/
 *.db
